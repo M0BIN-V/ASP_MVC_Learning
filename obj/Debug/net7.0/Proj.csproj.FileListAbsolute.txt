@@ -29,3 +29,5 @@ H:\C#\C# Asp.net Madaeni\Proj\obj\Debug\net7.0\refint\Proj.dll
 H:\C#\C# Asp.net Madaeni\Proj\obj\Debug\net7.0\Proj.pdb
 H:\C#\C# Asp.net Madaeni\Proj\obj\Debug\net7.0\Proj.genruntimeconfig.cache
 H:\C#\C# Asp.net Madaeni\Proj\obj\Debug\net7.0\ref\Proj.dll
+H:\C#\C# Asp.net Madaeni\Proj\bin\Debug\net7.0\Newtonsoft.Json.dll
+H:\C#\C# Asp.net Madaeni\Proj\obj\Debug\net7.0\Proj.csproj.CopyComplete

@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using Proj.Models;
 
 namespace Proj.Controllers;
@@ -21,6 +22,11 @@ public class HomeController : Controller
     public IActionResult Privacy()
     {
         return View();
+    }
+
+    public string GetUser()
+    {
+        return JsonConvert.SerializeObject(new User() { Name = "ali", Family = "mahmoodi", Age = 29 });
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
