@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Logging.AddConsole();
-
+//builder.Services.AddDirectoryBrowser();
 
 var app = builder.Build();
 
@@ -24,9 +24,14 @@ app.UseHttpsRedirection();
 app.UseStaticFiles(new StaticFileOptions()
 {
     FileProvider = new PhysicalFileProvider(
-        Path.Combine(Directory.GetCurrentDirectory(),"img")
+        Path.Combine(Directory.GetCurrentDirectory(), "img")
     ),
     RequestPath = "/images"
+});
+app.UseDirectoryBrowser(new DirectoryBrowserOptions()
+{
+    FileProvider = new PhysicalFileProvider(Directory.GetCurrentDirectory() + "/files"),
+    RequestPath = "/file"
 });
 app.UseRouting();
 app.UseAuthorization();
