@@ -20,7 +20,7 @@ public class HomeController : Controller
 
     public IActionResult Privacy()
     {
-        throw new Exception("Is Bug ...!");
+        //throw new Exception("Is Bug ...!");
         return View();
     }
 

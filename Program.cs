@@ -1,8 +1,9 @@
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Logging.AddConsole();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Logging.AddConsole();
+
 
 var app = builder.Build();
 
@@ -19,11 +20,8 @@ app.UseStatusCodePages("text/plain","haaaaaaah {0}");
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
-
 app.UseAuthorization();
-
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
