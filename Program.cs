@@ -14,6 +14,9 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+// {0} is status code 
+app.UseStatusCodePages("text/plain","haaaaaaah {0}");
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
