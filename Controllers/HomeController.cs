@@ -7,8 +7,7 @@ namespace Proj.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
-
+    private ILogger<HomeController> _logger;
     public HomeController(ILogger<HomeController> logger)
     {
         _logger = logger;
@@ -26,7 +25,9 @@ public class HomeController : Controller
 
     public string GetUser()
     {
-        return JsonConvert.SerializeObject(new User() { Name = "ali", Family = "mahmoodi", Age = 29 });
+        var json = JsonConvert.SerializeObject(new User() { Name = "ali", Family = "mahmoodi", Age = 29 });
+        return json;
+        _logger.LogInformation(json);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
