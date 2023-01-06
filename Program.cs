@@ -1,3 +1,5 @@
+using Microsoft.Extensions.FileProviders;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -16,10 +18,16 @@ if (!app.Environment.IsDevelopment())
 }
 
 // {0} is status code 
-app.UseStatusCodePages("text/plain","haaaaaaah {0}");
+app.UseStatusCodePages("text/plain", "haaaaaaah {0}");
 
 app.UseHttpsRedirection();
-app.UseStaticFiles();
+app.UseStaticFiles(new StaticFileOptions()
+{
+    FileProvider = new PhysicalFileProvider(
+        Path.Combine(Directory.GetCurrentDirectory(),"img")
+    ),
+    RequestPath = "/images"
+});
 app.UseRouting();
 app.UseAuthorization();
 app.MapControllerRoute(
