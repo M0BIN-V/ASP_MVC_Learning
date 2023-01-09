@@ -17,10 +17,10 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-var options = new DefaultFilesOptions();
-options.DefaultFileNames.Clear();
-options.DefaultFileNames.Add("myindex.html");
-app.UseDefaultFiles(options);
+// var options = new DefaultFilesOptions();
+// options.DefaultFileNames.Clear();
+// options.DefaultFileNames.Add("myindex.html");
+// app.UseDefaultFiles(options);
 
 // {0} is status code 
 app.UseStatusCodePages("text/plain", "haaaaaaah {0}");
