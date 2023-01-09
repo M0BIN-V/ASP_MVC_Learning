@@ -17,10 +17,17 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+var options = new DefaultFilesOptions();
+options.DefaultFileNames.Clear();
+options.DefaultFileNames.Add("myindex.html");
+app.UseDefaultFiles(options);
+
 // {0} is status code 
 app.UseStatusCodePages("text/plain", "haaaaaaah {0}");
 
 app.UseHttpsRedirection();
+
+app.UseStaticFiles();
 app.UseStaticFiles(new StaticFileOptions()
 {
     FileProvider = new PhysicalFileProvider(
@@ -28,11 +35,13 @@ app.UseStaticFiles(new StaticFileOptions()
     ),
     RequestPath = "/images"
 });
+
 app.UseDirectoryBrowser(new DirectoryBrowserOptions()
 {
     FileProvider = new PhysicalFileProvider(Directory.GetCurrentDirectory() + "/files"),
     RequestPath = "/file"
 });
+
 app.UseRouting();
 app.UseAuthorization();
 app.MapControllerRoute(

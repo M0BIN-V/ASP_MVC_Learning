@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ei8B73UGj+cLkahGaHslp2VXL4yoleA4lLr5brHrzLg=",
+  "Hash": "njJeck6tBxBkPG1c5irkj6nOKzAKAvBPJPuA1dNqgmI=",
   "Source": "Proj",
   "BasePath": "_content/Proj",
   "Mode": "Default",
@@ -1069,6 +1069,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\myindex.html",
+      "SourceId": "Proj",
+      "SourceType": "Discovered",
+      "ContentRoot": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\",
+      "BasePath": "_content/Proj",
+      "RelativePath": "myindex.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\myindex.html"
     }
   ]
 }
