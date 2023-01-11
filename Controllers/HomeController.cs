@@ -39,6 +39,16 @@ public class HomeController : Controller
         _logger.LogInformation(json);
     }
 
+    [Route("aboutus/{name?}")]
+    public IActionResult AboutUs(string name)
+    {
+        if (!string.IsNullOrEmpty(name))
+        {
+            return Content($"hello {name}");
+        }
+        else return View("home");
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
