@@ -16590,6 +16590,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "h:\\C#\\C# Asp.net Madaeni\\Proj\\Views\\Home\\TestView.cshtml",
+      "TargetPath": "Views\\Home\\TestView.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "h:\\C#\\C# Asp.net Madaeni\\Proj\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"

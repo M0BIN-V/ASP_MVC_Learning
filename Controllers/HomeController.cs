@@ -32,6 +32,15 @@ public class HomeController : Controller
         return _linkGenerator.GetPathByAction("index", "insta", new { id = "test" });
     }
 
+    [Route("Test/{name?}")]
+    public IActionResult TestView(string name)
+    {
+        ViewBag.Name = name;
+        ViewData["Family"] = "Mortazavi";
+
+        return View();
+    }
+
     public string GetUser()
     {
         var json = JsonConvert.SerializeObject(new User() { Name = "ali", Family = "mahmoodi", Age = 29 });

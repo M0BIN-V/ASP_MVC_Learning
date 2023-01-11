@@ -48,9 +48,9 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}"
 );
-app.MapControllerRoute(
-    name: "Insta",
-    pattern: "insta",
-    defaults: new { Controller = "insta", Action = "index" }
-);
+// app.MapControllerRoute(
+//     name: "Insta",
+//     pattern: "insta",
+//     defaults: new { Controller = "insta", Action = "index" }
+// );
 app.Run();

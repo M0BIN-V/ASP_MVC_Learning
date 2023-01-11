@@ -1,0 +1,12 @@
+<div style="
+background-color: gray;
+border-radius: 10px ;
+border-style: solid; 
+border-color: darkblue;">
+    Name : @ViewBag.Name <br>
+    Family : @ViewData["Family"]<br>
+    @for (int i = 0; i < 20; i++)
+    {
+        <ul> @i </ul>
+    }
+</div>
