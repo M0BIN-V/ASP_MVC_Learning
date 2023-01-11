@@ -7,8 +7,8 @@ namespace Proj.Controllers;
 
 public class HomeController : Controller
 {
-    private ILogger<HomeController> _logger;
-    private LinkGenerator _linkGenerator;
+    private readonly ILogger<HomeController> _logger;
+    private readonly LinkGenerator _linkGenerator;
 
     public HomeController(ILogger<HomeController> logger, LinkGenerator linkGenerator)
     {
@@ -27,10 +27,7 @@ public class HomeController : Controller
         return View();
     }
 
-    public string LinkGen()
-    {
-        return _linkGenerator.GetPathByAction("index", "insta", new { id = "test" });
-    }
+    public string LinkGen() => _linkGenerator.GetPathByAction("index", "insta", new { id = "test" })!;
 
     [Route("Test/{name?}")]
     public IActionResult TestView(string name)
@@ -44,17 +41,15 @@ public class HomeController : Controller
     public string GetUser()
     {
         var json = JsonConvert.SerializeObject(new User() { Name = "ali", Family = "mahmoodi", Age = 29 });
-        return json;
         _logger.LogInformation(json);
+        return json;
     }
 
     [Route("aboutus/{name?}")]
     public IActionResult AboutUs(string name)
     {
         if (!string.IsNullOrEmpty(name))
-        {
             return Content($"hello {name}");
-        }
         else return View("home");
     }
 
@@ -69,6 +64,6 @@ public class HomeController : Controller
     public IActionResult Link()
     {
         var url = Url.RouteUrl("ErrorAction", new { ErrorCode = 404 }, Request.Scheme);
-        return Content(url);
+        return Content(url!);
     }
 }

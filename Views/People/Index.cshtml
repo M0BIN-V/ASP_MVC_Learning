@@ -1,0 +1,18 @@
+@{
+    ViewData["Title"] = "Index";
+}
+
+@model List<User>
+
+<ol>
+    @foreach (var item in Model)
+    {
+            <li style="border-color: darkgreen; border-style: solid; border-radius:30px ;padding: 50px;">
+                Name : @item.Name <br>
+                Family : @item.Family <br>
+                Age : @item.Age
+            </li>
+        <br>
+        <br>
+    }
+</ol>
