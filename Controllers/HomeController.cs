@@ -8,9 +8,12 @@ namespace Proj.Controllers;
 public class HomeController : Controller
 {
     private ILogger<HomeController> _logger;
-    public HomeController(ILogger<HomeController> logger)
+    private LinkGenerator _linkGenerator;
+
+    public HomeController(ILogger<HomeController> logger, LinkGenerator linkGenerator)
     {
         _logger = logger;
+        _linkGenerator = linkGenerator;
     }
 
     public IActionResult Index()
@@ -22,6 +25,11 @@ public class HomeController : Controller
     {
         //throw new Exception("Is Bug ...!");
         return View();
+    }
+
+    public string LinkGen()
+    {
+        return _linkGenerator.GetPathByAction("index", "insta", new { id = "test" });
     }
 
     public string GetUser()
