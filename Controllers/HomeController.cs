@@ -50,8 +50,16 @@ public class HomeController : Controller
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+    [HttpGet("Error/{ErrorCode?}", Name = "ErrorAction")]
     public IActionResult Error()
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+    }
+
+    [Route("link")]
+    public IActionResult Link()
+    {
+        var url = Url.RouteUrl("ErrorAction", new { ErrorCode = 404 }, Request.Scheme);
+        return Content(url);
     }
 }
