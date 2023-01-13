@@ -1,8 +1,12 @@
+@model Proj.Models.User
 @{
     ViewData["Title"] = "Details";
+    Layout = "_MyLayout";
 }
-
-@model Proj.Models.User
+@* 
+@section Header {
+this is header
+} *@
 
 <H3>
     @Model.Name
@@ -13,3 +17,7 @@
 <h5>
     @Model.Age
 </h5>
+
+@section Footer {
+this is footer
+}

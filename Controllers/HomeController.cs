@@ -41,7 +41,7 @@ public class HomeController : Controller
     public string GetUser()
     {
         var json = JsonConvert.SerializeObject(new User() { Name = "ali", Family = "mahmoodi", Age = 29 });
-        _logger.LogInformation(json);
+     //   _logger.LogInformation(json);
         return json;
     }
 
