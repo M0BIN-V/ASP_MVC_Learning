@@ -16580,6 +16580,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "h:\\C#\\C# Asp.net Madaeni\\Proj\\Views\\Shared\\_DatePartial.cshtml",
+      "TargetPath": "Views\\Shared\\_DatePartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "h:\\C#\\C# Asp.net Madaeni\\Proj\\Views\\Home\\TestView.cshtml",
       "TargetPath": "Views\\Home\\TestView.cshtml",
       "FileKind": "mvc"
