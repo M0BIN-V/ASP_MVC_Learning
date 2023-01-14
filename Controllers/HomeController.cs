@@ -21,10 +21,27 @@ public class HomeController : Controller
         return View();
     }
 
+    internal static User _user = new()
+    {
+        Name = "ahmad",
+        Family = "reza",
+        Age = 20
+    };
+
+    [HttpPost]
+    public IActionResult Privacy(User user)
+    {
+        _user.Name = user.Name;
+        _user.Family = user.Family;
+        _user.Age = user.Age;
+
+        return RedirectToAction("Privacy");
+    }
+
     public IActionResult Privacy()
     {
         //throw new Exception("Is Bug ...!");
-        return View();
+        return View(_user);
     }
 
     public string LinkGen() => _linkGenerator.GetPathByAction("index", "insta", new { id = "test" })!;
@@ -41,7 +58,7 @@ public class HomeController : Controller
     public string GetUser()
     {
         var json = JsonConvert.SerializeObject(new User() { Name = "ali", Family = "mahmoodi", Age = 29 });
-     //   _logger.LogInformation(json);
+        //   _logger.LogInformation(json);
         return json;
     }
 

@@ -1,4 +1,5 @@
-﻿@{
+﻿@model User
+@{
     ViewData["Title"] = "Privacy Policy";
 
     // Layout = null;
@@ -7,3 +8,18 @@
 <h1>@ViewData["Title"]</h1>
 
 <p>Use this page to detail your site's privacy policy.</p>
+<form asp-action="Privacy" asp-controller="Home" method="post">
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name">
+    </div>
+    <div>
+        <label asp-for="Family"></label>
+        <input asp-for="Family">
+    </div>
+    <div>
+        <label asp-for="Age"></label>
+        <input asp-for="Age">
+    </div>
+    <input type="submit" value="submit">
+</form>
