@@ -25,7 +25,7 @@ public class HomeController : Controller
     {
         Name = "ahmad",
         Family = "reza",
-        Age = 20
+        Password = "adsfasdf"
     };
 
     [HttpPost]
@@ -35,10 +35,11 @@ public class HomeController : Controller
         {
             _user.Name = user.Name;
             _user.Family = user.Family;
-            _user.Age = user.Age;
+            _user.Password = user.Password;
+            return RedirectToAction("Privacy");
         }
 
-        return RedirectToAction("Privacy");
+        return View(user);
     }
 
     public IActionResult Privacy()
@@ -60,7 +61,7 @@ public class HomeController : Controller
 
     public string GetUser()
     {
-        var json = JsonConvert.SerializeObject(new User() { Name = "ali", Family = "mahmoodi", Age = 29 });
+        var json = JsonConvert.SerializeObject(new User() { Name = "ali", Family = "mahmoodi", Password = "234234" });
         //   _logger.LogInformation(json);
         return json;
     }

@@ -9,10 +9,10 @@ namespace Proj.Controllers
         {
             var users = new List<User>()
             {
-                new User (){Name = "reza" , Family = "kiani" , Age = 65},
-                new User (){Name = "mariam" , Family = "masoodi" , Age = 43},
-                new User (){Name = "sara" , Family = "baiat" , Age = 54},
-                new User (){Name = "ali" , Family = "mirzaii" , Age = 21}
+                new User (){Name = "reza" , Family = "kiani" , Password = "asdf"},
+                new User (){Name = "mariam" , Family = "masoodi" , Password = "fdsafs"},
+                new User (){Name = "sara" , Family = "baiat" , Password = "sdfsdf"},
+                new User (){Name = "ali" , Family = "mirzaii" , Password = "sdfasf"}
             };
             return View(users);
         }
@@ -23,7 +23,7 @@ namespace Proj.Controllers
             {
                 Name = "ahmad",
                 Family = "amiri",
-                Age = 20,
+                Password = "26540",
             };
 
             return View(user);
