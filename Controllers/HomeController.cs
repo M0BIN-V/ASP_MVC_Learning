@@ -31,9 +31,12 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult Privacy(User user)
     {
-        _user.Name = user.Name;
-        _user.Family = user.Family;
-        _user.Age = user.Age;
+        if (ModelState.IsValid)
+        {
+            _user.Name = user.Name;
+            _user.Family = user.Family;
+            _user.Age = user.Age;
+        }
 
         return RedirectToAction("Privacy");
     }
