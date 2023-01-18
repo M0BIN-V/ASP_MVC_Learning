@@ -1,37 +1,6 @@
-﻿@model User
-@{
+﻿@{
     ViewData["Title"] = "Privacy Policy";
-
-    // Layout = null;
 }
-<style>
-    .field-validation-error {
-        color: red
-    }
-
-    .validation-summary-errors {
-        color: red;
-    }
-</style>
 <h1>@ViewData["Title"]</h1>
 
 <p>Use this page to detail your site's privacy policy.</p>
-<form asp-action="Privacy" asp-controller="Home" method="post">
-    <div>
-        <label asp-for="Name"></label>
-        <input asp-for="Name">
-        <span asp-validation-for="Name"></span>
-    </div>
-    <div>
-        <label asp-for="Family"></label>
-        <input asp-for="Family">
-        <span asp-validation-for="Family"></span>
-    </div>
-    <div>
-        <label asp-for="Password"></label>
-        <input asp-for="Password">
-        <span asp-validation-for="Password"></span>
-    </div>
-    <div asp-validation-summary="All"></div>
-    <input type="submit" value="submit">
-</form>

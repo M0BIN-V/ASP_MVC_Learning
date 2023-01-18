@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Proj.bundle.scp.css",
-      "PackagePath": "staticwebassets\\Proj.bundle.scp.css"
+      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\MyEshop.bundle.scp.css",
+      "PackagePath": "staticwebassets\\MyEshop.bundle.scp.css"
     },
     {
       "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\css\\site.css",
@@ -245,24 +245,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\myindex.html",
-      "PackagePath": "staticwebassets\\myindex.html"
-    },
-    {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Proj.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.MyEshop.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Proj.props",
-      "PackagePath": "build\\Proj.props"
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.MyEshop.props",
+      "PackagePath": "build\\MyEshop.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Proj.props",
-      "PackagePath": "buildMultiTargeting\\Proj.props"
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.MyEshop.props",
+      "PackagePath": "buildMultiTargeting\\MyEshop.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Proj.props",
-      "PackagePath": "buildTransitive\\Proj.props"
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.MyEshop.props",
+      "PackagePath": "buildTransitive\\MyEshop.props"
     }
   ],
   "ElementsToRemove": []

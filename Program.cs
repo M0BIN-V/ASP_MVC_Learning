@@ -1,11 +1,7 @@
-using Microsoft.Extensions.FileProviders;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Logging.AddConsole();
-//builder.Services.AddDirectoryBrowser();
 
 var app = builder.Build();
 
@@ -17,40 +13,15 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-// var options = new DefaultFilesOptions();
-// options.DefaultFileNames.Clear();
-// options.DefaultFileNames.Add("myindex.html");
-// app.UseDefaultFiles(options);
-
-// {0} is status code 
-app.UseStatusCodePages("text/plain", "haaaaaaah {0}");
-
 app.UseHttpsRedirection();
-
 app.UseStaticFiles();
-app.UseStaticFiles(new StaticFileOptions()
-{
-    FileProvider = new PhysicalFileProvider(
-        Path.Combine(Directory.GetCurrentDirectory(), "img")
-    ),
-    RequestPath = "/images"
-});
-
-app.UseDirectoryBrowser(new DirectoryBrowserOptions()
-{
-    FileProvider = new PhysicalFileProvider(Directory.GetCurrentDirectory() + "/files"),
-    RequestPath = "/file"
-});
 
 app.UseRouting();
+
 app.UseAuthorization();
+
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}"
-);
-// app.MapControllerRoute(
-//     name: "Insta",
-//     pattern: "insta",
-//     defaults: new { Controller = "insta", Action = "index" }
-// );
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
 app.Run();
