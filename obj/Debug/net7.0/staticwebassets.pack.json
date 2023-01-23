@@ -17,6 +17,106 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\lib\\bootstrap4\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap4\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\lib\\bootstrap4\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap4\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\lib\\bootstrap4\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap4\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\lib\\bootstrap4\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap4\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\lib\\bootstrap4\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap4\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\lib\\bootstrap4\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap4\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\lib\\bootstrap4\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap4\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\lib\\bootstrap4\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap4\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\lib\\bootstrap4\\css\\bootstrap-rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap4\\css\\bootstrap-rtl.css"
+    },
+    {
+      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\lib\\bootstrap4\\css\\bootstrap-rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap4\\css\\bootstrap-rtl.css.map"
+    },
+    {
+      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\lib\\bootstrap4\\css\\bootstrap-rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap4\\css\\bootstrap-rtl.min.css"
+    },
+    {
+      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\lib\\bootstrap4\\css\\bootstrap-rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap4\\css\\bootstrap-rtl.min.css.map"
+    },
+    {
+      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\lib\\bootstrap4\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap4\\css\\bootstrap.css"
+    },
+    {
+      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\lib\\bootstrap4\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap4\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\lib\\bootstrap4\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap4\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\lib\\bootstrap4\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap4\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\lib\\bootstrap4\\css\\custom.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap4\\css\\custom.min.css"
+    },
+    {
+      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\lib\\bootstrap4\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap4\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\lib\\bootstrap4\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap4\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\lib\\bootstrap4\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap4\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\lib\\bootstrap4\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap4\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\lib\\bootstrap4\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap4\\js\\bootstrap.js"
+    },
+    {
+      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\lib\\bootstrap4\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap4\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\lib\\bootstrap4\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap4\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\lib\\bootstrap4\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap4\\js\\bootstrap.min.js.map"
+    },
+    {
       "Id": "H:\\C#\\C# Asp.net Madaeni\\Proj\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
